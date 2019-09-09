@@ -1,10 +1,11 @@
-const add = (start = 0) => {
-    let number = start;
-    return () => {
-        number++;
-        document.body.textContent = `stan licznika to ${number}`;
-    };
-};
+const user = () => {
+    let userName = "Mieszko"
+    let userAge = 16
 
-const counter = add();
-document.addEventListener("click", counter);
+    function showName() {
+        console.log(`Cześć ${userName}, ${userAge >= 18 ?'Możesz kupić piwo':'Niemożesz kupić piwa'}`)
+    }
+    return showName
+}
+
+const mieszko = user()
