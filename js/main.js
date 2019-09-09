@@ -1,3 +1,18 @@
+const clock = () => {
+    let counter = 0
+    function count() {
+        document.body.textContent = `Na stronie jesteś ${counter} sekund`
+        counter++
+    }
+    return count
+}
+
+const count = clock()
+
+setInterval(count, 1000)
+
+
+
 const user = () => {
     let userName = "Mieszko"
     let userAge = 16
